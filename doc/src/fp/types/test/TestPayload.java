@@ -6,6 +6,7 @@ import fp.types.Payload;
 public class TestPayload {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		
 		Payload p1 = new Payload("DemoSat","MassSimulator",19.50, Orbit.LOWEARTHORBIT);
 		Payload p2 = new Payload("DemoSat","MassSimulator",19.50, Orbit.LOWEARTHORBIT);

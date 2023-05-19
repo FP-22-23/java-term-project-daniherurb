@@ -9,7 +9,9 @@ import java.util.Objects;
 import fp.types.Payload;
 import fp.utils.Checkers;
 
-public class SpaceMission{
+
+
+public class SpaceMission {
 
 	private String company; //space company that carried out the flight
 	private LocalDate launchDate; //date of the launch
@@ -72,7 +74,6 @@ public class SpaceMission{
 	}
 	
 	//DERIVED PROPERTY 
-	
 	//property weather, of type list, that includes the temperature, wind speed and humidity at the exact time of the launch
 	public List<Integer> getWeather(){ 
 		List<Integer> weather = new ArrayList<Integer>();
