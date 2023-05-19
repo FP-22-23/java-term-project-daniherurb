@@ -48,6 +48,7 @@ The constructor of the type creates an object of type Payload with all its attri
 ***Constructors of the type***<br>
 * One with all basic properties
 * One with all basic properties and a collection of the type SpaceMission
+* One with all basic properties and a stream of objects of the same type
 
 ***Operations of the type***<br>
 * getNumberOfSpaceMissions() -> returns the number of space missions
@@ -59,9 +60,19 @@ The constructor of the type creates an object of type Payload with all its attri
 * existsSpaceMission(LocalDate launchDate) -> returns true if a space mission happened in the same input date
 * countTypeOfOrbit(Orbit o) -> returns number of space missions with that orbit type
 * succesfulSpaceMissions() -> returns a list of filtered succesful spacemissions
-* typesOfVehicleByCompany() -> returns a map  with keys being the companies and the values being the type of vehicles they have used
+* typesOfVehicleByCompany() -> returns a map with keys being the companies and the values being the type of vehicles they have used
 * numberOfSpaceMissionsByCompany() -> returns a map with keys being the companies and the values being the total space missions they have done
-
+* existsSpaceMissionStr(LocalDate launchDate) -> returns true if a space mission happened in the same input date (implemented with streams)
+* countTypeOfOrbit(Orbit o) -> returns number of space missions with that orbit type (implemented with streams)
+* succesfulSpaceMissions() -> returns a list of filtered succesful spacemissions (implemented with streams)
+* maximumLitoffThrust() -> returns the SpaceMission with the greater Litoff Thrust
+* sortAndFilterAfterLaunchDate(LocalDate ld) -> returns a list of space missions that happened after the input LocalDate sorted by date
+* typesOfVehicleByCompanyStr() -> returns a map with keys being the companies and the values being the type of vehicles they have used (implemented with streams)
+* averageTemperatureByLaunchSite() -> returns a map with keys being launching sites and values being the average temperature on said site
+* spaceMissionWithGreatestRocketHeightByCompany() -> returns a map with keys being companies and the values being the space mission with the greatest rocket height belonging to said company
+* nSpaceMissionsWithBiggestFairingDiameterByCompany(Integer i) -> returns a sorted map with keys being companies and the values being a list of i space missions with the biggest fairing diameter
+* mostUsedVehicleType() -> returns the most used vehicle type (using a map)
+    
 **SpaceMissions Factory** - Factory of space missions from a CSV file<br>
 ***Methods of the type***<br>
 * readSpaceMissions(String fileName) -> receives a string formatted as the lines of the CSV file, and returns an object of the base type
